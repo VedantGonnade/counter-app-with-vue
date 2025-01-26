@@ -13,6 +13,7 @@ npm install
 ```sh
 npm run dev
 ```
+
 Project will look like this:
 
 ![alt text](image.png)

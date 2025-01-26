@@ -1,17 +1,17 @@
 <template>
-  <div class="flex justify-center items-center h-screen">
-    <div class="flex flex-col justify-center items-center bg-blue-950 rounded-md w-96 h-56">
+  <div class="flex h-screen items-center justify-center">
+    <div class="flex h-56 w-96 flex-col items-center justify-center rounded-md bg-blue-950">
       <div>
-        <h2 class="mb-8 font-medium text-lg text-white">Counter App</h2>
+        <h2 class="mb-8 text-lg font-medium text-white">Counter App</h2>
       </div>
       <div>
         <p :class="['text-4xl', counterColour]">{{ counter }}</p>
       </div>
-      <hr class="my-1 border w-4/5" />
-      <div class="flex justify-center items-center space-x-6 mt-8">
-        <ActionButton @click="subtract" text="Subtract" type="subtract" icon="arrow-down"/>
-        <ActionButton @click="reset" text="Reset" type="reset" icon="spinner"/>
-        <ActionButton @click="add" text="Add" type="add" icon="arrow-up"/>
+      <hr class="my-1 w-4/5 border" />
+      <div class="mt-8 flex items-center justify-center space-x-6">
+        <ActionButton @click="subtract" text="Subtract" type="subtract" icon="arrow-down" />
+        <ActionButton @click="reset" text="Reset" type="reset" icon="spinner" />
+        <ActionButton @click="add" text="Add" type="add" icon="arrow-up" />
       </div>
     </div>
   </div>

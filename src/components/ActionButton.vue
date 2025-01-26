@@ -1,6 +1,6 @@
 <template>
   <button :class="buttonType">
-    <font-awesome-icon :icon="['fas', this.icon]" class="mt-1 mr-1"/>
+    <font-awesome-icon :icon="['fas', this.icon]" class="mr-1 mt-1" />
     {{ text }}
   </button>
 </template>
@@ -39,7 +39,7 @@ export default {
 
 <style scoped>
 button {
-  @apply px-4 py-2 rounded-md font-medium;
+  @apply rounded-md px-4 py-2 font-medium;
 }
 
 .add {
