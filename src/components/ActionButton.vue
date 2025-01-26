@@ -1,5 +1,6 @@
 <template>
   <button :class="buttonType">
+    <font-awesome-icon :icon="['fas', this.icon]" class="mt-1 mr-1"/>
     {{ text }}
   </button>
 </template>
@@ -17,8 +18,12 @@ export default {
       default: "Add",
       required: false,
       validator: value => {
-        return ["Subtract", "Reset", "Add"].includes(value);
+        return ["subtract", "reset", "add"].includes(value);
       },
+    },
+    icon: {
+      type: String,
+      required: true,
     },
   },
 
@@ -34,7 +39,7 @@ export default {
 
 <style scoped>
 button {
-  @apply rounded-md px-4 py-2;
+  @apply px-4 py-2 rounded-md font-medium;
 }
 
 .add {
@@ -46,6 +51,6 @@ button {
 }
 
 .reset {
-  @apply bg-blue-500 text-white;
+  @apply bg-slate-200 text-black;
 }
 </style>
